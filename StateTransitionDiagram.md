@@ -1,3 +1,4 @@
+```uml
 @startuml
 
 title 状態遷移図の例
@@ -27,3 +28,4 @@ state 終了
 終了 --> [*]
 
 @enduml
+```
