@@ -1,8 +1,11 @@
 version: 2
-jobs:
-  document:
+executors:
+  my-executor:
     docker:
       - image: circleci/openjdk:9.0.4
+jobs:
+  my-job:
+    executor: my-executor
     steps:
       # 専用のブランチ作成・移動
       - run: git checkout -b auto-commit
