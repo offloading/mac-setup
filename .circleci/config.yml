@@ -1,17 +1,7 @@
-version: 2.1
-executors:
-  my-executor:
-    docker:
-      - image: circleci/openjdk:9.0.4
+version: 2
 jobs:
-  my-job:
-    executor: my-executor
-    steps:
-      # 専用のブランチ作成・移動
-      - run: git checkout -b auto-commit
-      - run: sudo apt-get install plantuml
-      - run: sudo apt-get install fonts-ipafont-gothic
-      - run: plantuml *.md
-      - run: git add -A
-      - run: git commit -am "[ci skip] auto commit"
-      - run: git push -f origin auto-document
+  build:
+    docker:
+      - image: circleci/node:8.11.3
+  steps:
+      - run: echo "hello world"
