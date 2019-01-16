@@ -1,7 +1,14 @@
 version: 2.1
-orbs:
-    hello: circleci/hello-build@0.0.5
-workflows:
-    "Hello Workflow":
-        jobs:
-          - hello/hello-build
+jobs:
+  document:
+    docker:
+      - image: circleci/openjdk:9.0.4
+    steps:
+      # 専用のブランチ作成・移動
+      - run: git checkout -b auto-commit
+      - run: sudo apt-get install plantuml
+      - run: sudo apt-get install fonts-ipafont-gothic
+      - run: plantuml *.md
+      - run: git add -A
+      - run: git commit -am "[ci skip] auto commit"
+      - run: git push -f origin auto-document
