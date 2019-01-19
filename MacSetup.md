@@ -27,5 +27,15 @@
 
 # Macの設定
 ## Xcode & homebrew
-`./setup_dev_env_mac_1.sh`
+`$ ./setup_dev_env_mac_1.sh`
+
+## brew-file
+`$ ./setup_dev_env_mac_2.sh`
+
+## brew-file の取得
+`$ ./setup_dev_env_mac_3.sh`
+
+## brew-file からのインストール
+`$ ./setup_dev_env_mac_4.sh`
+
 
