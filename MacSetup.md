@@ -57,3 +57,19 @@ code hogehoge.md
 
 code .
 設定方法ですが、VSCodeを起動してコマンドパレットを開き、pathと入力して以下を選択します。
+
+## VisualStudioCode の拡張機能
+
+| 拡張機能名称 | 概要 |
+|:-----------|:-----------|
+| Bracket Pair Colorizer | 対応する括弧を色で識別できる |
+| JSON Tools | JSON整形（pretty / minify） |
+| Paste JSON as Code | JSONに対応するコードを作成 |
+| Log File Highlighter | ログファイルを色分けして表示 |
+| Markdown All in One | Markdownの記述をサポート |
+| markdownlint | Markdown用のLint |
+| PlantUML | PlantUMLが使える |
+| REST Client | VSCodeがRESTクライアントになる |
+| Text Marker (Highlighter) | 任意のテキストにマーカーが引ける |
+| vscode-icons | アイコンで分かりやすくなる |
+| テキスト校正くん | 日本語の文章チェック |
